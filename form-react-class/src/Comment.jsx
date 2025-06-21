@@ -8,6 +8,18 @@ export default function Comment(){
             rating: 4
         }]);
 
+    // const formik = useFormik({
+    //     initialValues: {
+    //         username : "",
+    //         remarks: "",
+    //         rating : ""
+    //     },
+    //     validate,
+    //     onsubmit: values =>{
+    //         alert(JSON.stringify(values, null,2));
+    //     }
+    // });
+
     let addNewComment = (comment)=>{
      setComments((currComments)=>[...currComments,comment]);
      console.log("Added new Comment");
